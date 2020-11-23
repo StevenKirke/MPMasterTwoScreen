@@ -126,7 +126,6 @@
 				F5DC9FB7256AE47C008C29D0 /* TextViews */,
 				F5DC9FB6256AE466008C29D0 /* Gradients */,
 				F5DC9FB5256AE451008C29D0 /* Labels */,
-				F5DC9F8925696D8A008C29D0 /* OthersElements */,
 				F5DC9F8825696D6B008C29D0 /* Backgrounds */,
 				F5DC9F8725696D57008C29D0 /* Buttons */,
 			);
@@ -206,13 +205,6 @@
 				F535440325651D8F0026B1B5 /* Background.swift */,
 			);
 			path = Backgrounds;
-			sourceTree = "<group>";
-		};
-		F5DC9F8925696D8A008C29D0 /* OthersElements */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OthersElements;
 			sourceTree = "<group>";
 		};
 		F5DC9F9925698E1F008C29D0 /* FontStyles */ = {
