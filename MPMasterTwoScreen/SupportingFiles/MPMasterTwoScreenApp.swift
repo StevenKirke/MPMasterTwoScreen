@@ -11,7 +11,7 @@ import SwiftUI
 struct MPMasterTwoScreenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OrderView(viewModel: OrderViewModel(person: Person()))
         }
     }
 }

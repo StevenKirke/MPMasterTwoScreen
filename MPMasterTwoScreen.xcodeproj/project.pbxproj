@@ -8,18 +8,68 @@
 
 /* Begin PBXBuildFile section */
 		F53543E2256510030026B1B5 /* MPMasterTwoScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53543E1256510030026B1B5 /* MPMasterTwoScreenApp.swift */; };
-		F53543E4256510030026B1B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53543E3256510030026B1B5 /* ContentView.swift */; };
 		F53543E6256510030026B1B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53543E5256510030026B1B5 /* Assets.xcassets */; };
 		F53543E9256510030026B1B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53543E8256510030026B1B5 /* Preview Assets.xcassets */; };
+		F53543FE256517870026B1B5 /* TestModelPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53543FD256517870026B1B5 /* TestModelPerson.swift */; };
+		F535440125651CEA0026B1B5 /* MainScreenPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535440025651CEA0026B1B5 /* MainScreenPerson.swift */; };
+		F535440425651D8F0026B1B5 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535440325651D8F0026B1B5 /* Background.swift */; };
+		F535440A25653A700026B1B5 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F535440925653A700026B1B5 /* OrderView.swift */; };
+		F5DC9F6725657180008C29D0 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F6625657180008C29D0 /* OrderViewModel.swift */; };
+		F5DC9F6A256677DC008C29D0 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F69256677DC008C29D0 /* PersonView.swift */; };
+		F5DC9F6D25667D70008C29D0 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F6C25667D70008C29D0 /* Gradient.swift */; };
+		F5DC9F7025680D19008C29D0 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F6F25680D19008C29D0 /* SquareButton.swift */; };
+		F5DC9F7325680FE7008C29D0 /* ButtonVariableWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F7225680FE7008C29D0 /* ButtonVariableWidth.swift */; };
+		F5DC9F77256813EE008C29D0 /* ButtonWithBackAndShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F76256813EE008C29D0 /* ButtonWithBackAndShadow.swift */; };
+		F5DC9F7C256815C0008C29D0 /* ButtonWithFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F7B256815C0008C29D0 /* ButtonWithFrame.swift */; };
+		F5DC9F7F2568197D008C29D0 /* StyleForButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F7E2568197D008C29D0 /* StyleForButtons.swift */; };
+		F5DC9F8225681A38008C29D0 /* StyleForTextWithBlueColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F8125681A38008C29D0 /* StyleForTextWithBlueColor.swift */; };
+		F5DC9F8525696BCA008C29D0 /* StyleForTextWithBlackColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F8425696BCA008C29D0 /* StyleForTextWithBlackColor.swift */; };
+		F5DC9F8B25696DFD008C29D0 /* ButtonOnlyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F8A25696DFD008C29D0 /* ButtonOnlyText.swift */; };
+		F5DC9F9225697565008C29D0 /* StyleForTextWithWhiteColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F9125697565008C29D0 /* StyleForTextWithWhiteColor.swift */; };
+		F5DC9F9625698AAC008C29D0 /* FontWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F9525698AAC008C29D0 /* FontWeight.swift */; };
+		F5DC9F9C25698F3B008C29D0 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F9B25698F3B008C29D0 /* FontStyle.swift */; };
+		F5DC9F9F2569B2D2008C29D0 /* ForTestElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9F9E2569B2D2008C29D0 /* ForTestElement.swift */; };
+		F5DC9FA3256A885E008C29D0 /* ButtonWithBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FA2256A885E008C29D0 /* ButtonWithBack.swift */; };
+		F5DC9FA6256A8912008C29D0 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FA5256A8912008C29D0 /* LabelView.swift */; };
+		F5DC9FA9256A9E19008C29D0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FA8256A9E19008C29D0 /* TextView.swift */; };
+		F5DC9FAC256AA052008C29D0 /* DropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FAB256AA052008C29D0 /* DropButton.swift */; };
+		F5DC9FB2256ABA40008C29D0 /* CollapsableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FB1256ABA40008C29D0 /* CollapsableView.swift */; };
+		F5DC9FBC256AEB29008C29D0 /* RoundWithGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FBB256AEB29008C29D0 /* RoundWithGradientButton.swift */; };
+		F5DC9FC2256AFB36008C29D0 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FC1256AFB36008C29D0 /* DropDownMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F53543DE256510030026B1B5 /* MPMasterTwoScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPMasterTwoScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53543E1256510030026B1B5 /* MPMasterTwoScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPMasterTwoScreenApp.swift; sourceTree = "<group>"; };
-		F53543E3256510030026B1B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F53543E5256510030026B1B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F53543E8256510030026B1B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F53543EA256510030026B1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53543FD256517870026B1B5 /* TestModelPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModelPerson.swift; sourceTree = "<group>"; };
+		F535440025651CEA0026B1B5 /* MainScreenPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPerson.swift; sourceTree = "<group>"; };
+		F535440325651D8F0026B1B5 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		F535440925653A700026B1B5 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		F5DC9F6625657180008C29D0 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		F5DC9F69256677DC008C29D0 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		F5DC9F6C25667D70008C29D0 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		F5DC9F6F25680D19008C29D0 /* SquareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
+		F5DC9F7225680FE7008C29D0 /* ButtonVariableWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVariableWidth.swift; sourceTree = "<group>"; };
+		F5DC9F76256813EE008C29D0 /* ButtonWithBackAndShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithBackAndShadow.swift; sourceTree = "<group>"; };
+		F5DC9F7B256815C0008C29D0 /* ButtonWithFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithFrame.swift; sourceTree = "<group>"; };
+		F5DC9F7E2568197D008C29D0 /* StyleForButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleForButtons.swift; sourceTree = "<group>"; };
+		F5DC9F8125681A38008C29D0 /* StyleForTextWithBlueColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleForTextWithBlueColor.swift; sourceTree = "<group>"; };
+		F5DC9F8425696BCA008C29D0 /* StyleForTextWithBlackColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleForTextWithBlackColor.swift; sourceTree = "<group>"; };
+		F5DC9F8A25696DFD008C29D0 /* ButtonOnlyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOnlyText.swift; sourceTree = "<group>"; };
+		F5DC9F9125697565008C29D0 /* StyleForTextWithWhiteColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleForTextWithWhiteColor.swift; sourceTree = "<group>"; };
+		F5DC9F9525698AAC008C29D0 /* FontWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeight.swift; sourceTree = "<group>"; };
+		F5DC9F9B25698F3B008C29D0 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
+		F5DC9F9E2569B2D2008C29D0 /* ForTestElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForTestElement.swift; sourceTree = "<group>"; };
+		F5DC9FA2256A885E008C29D0 /* ButtonWithBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithBack.swift; sourceTree = "<group>"; };
+		F5DC9FA5256A8912008C29D0 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		F5DC9FA8256A9E19008C29D0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		F5DC9FAB256AA052008C29D0 /* DropButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropButton.swift; sourceTree = "<group>"; };
+		F5DC9FB1256ABA40008C29D0 /* CollapsableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableView.swift; sourceTree = "<group>"; };
+		F5DC9FBB256AEB29008C29D0 /* RoundWithGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundWithGradientButton.swift; sourceTree = "<group>"; };
+		F5DC9FC1256AFB36008C29D0 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +102,12 @@
 		F53543E0256510030026B1B5 /* MPMasterTwoScreen */ = {
 			isa = PBXGroup;
 			children = (
-				F53543E1256510030026B1B5 /* MPMasterTwoScreenApp.swift */,
-				F53543E3256510030026B1B5 /* ContentView.swift */,
-				F53543E5256510030026B1B5 /* Assets.xcassets */,
-				F53543EA256510030026B1B5 /* Info.plist */,
-				F53543E7256510030026B1B5 /* Preview Content */,
+				F53543FC2565176C0026B1B5 /* Models */,
+				F53543F2256511100026B1B5 /* Views */,
+				F53543F8256512680026B1B5 /* Styles */,
+				F53543F4256511340026B1B5 /* SupportingFiles */,
+				F53543F1256510F20026B1B5 /* InterfaceElements */,
+				F53543F32565111F0026B1B5 /* Sources */,
 			);
 			path = MPMasterTwoScreen;
 			sourceTree = "<group>";
@@ -67,6 +118,134 @@
 				F53543E8256510030026B1B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F53543F1256510F20026B1B5 /* InterfaceElements */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC9FB7256AE47C008C29D0 /* TextViews */,
+				F5DC9FB6256AE466008C29D0 /* Gradients */,
+				F5DC9FB5256AE451008C29D0 /* Labels */,
+				F5DC9F8925696D8A008C29D0 /* OthersElements */,
+				F5DC9F8825696D6B008C29D0 /* Backgrounds */,
+				F5DC9F8725696D57008C29D0 /* Buttons */,
+			);
+			path = InterfaceElements;
+			sourceTree = "<group>";
+		};
+		F53543F2256511100026B1B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F535440025651CEA0026B1B5 /* MainScreenPerson.swift */,
+				F535440925653A700026B1B5 /* OrderView.swift */,
+				F5DC9F6625657180008C29D0 /* OrderViewModel.swift */,
+				F5DC9F69256677DC008C29D0 /* PersonView.swift */,
+				F5DC9F9E2569B2D2008C29D0 /* ForTestElement.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F53543F32565111F0026B1B5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F53543E5256510030026B1B5 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F53543F4256511340026B1B5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F53543E1256510030026B1B5 /* MPMasterTwoScreenApp.swift */,
+				F53543E7256510030026B1B5 /* Preview Content */,
+				F53543EA256510030026B1B5 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F53543F8256512680026B1B5 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC9F9925698E1F008C29D0 /* FontStyles */,
+				F5DC9F7E2568197D008C29D0 /* StyleForButtons.swift */,
+				F5DC9F8125681A38008C29D0 /* StyleForTextWithBlueColor.swift */,
+				F5DC9F8425696BCA008C29D0 /* StyleForTextWithBlackColor.swift */,
+				F5DC9F9125697565008C29D0 /* StyleForTextWithWhiteColor.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F53543FC2565176C0026B1B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F53543FD256517870026B1B5 /* TestModelPerson.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5DC9F8725696D57008C29D0 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC9F6F25680D19008C29D0 /* SquareButton.swift */,
+				F5DC9F7B256815C0008C29D0 /* ButtonWithFrame.swift */,
+				F5DC9F76256813EE008C29D0 /* ButtonWithBackAndShadow.swift */,
+				F5DC9F7225680FE7008C29D0 /* ButtonVariableWidth.swift */,
+				F5DC9F8A25696DFD008C29D0 /* ButtonOnlyText.swift */,
+				F5DC9FA2256A885E008C29D0 /* ButtonWithBack.swift */,
+				F5DC9FAB256AA052008C29D0 /* DropButton.swift */,
+				F5DC9FB1256ABA40008C29D0 /* CollapsableView.swift */,
+				F5DC9FBB256AEB29008C29D0 /* RoundWithGradientButton.swift */,
+				F5DC9FC1256AFB36008C29D0 /* DropDownMenu.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F5DC9F8825696D6B008C29D0 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				F535440325651D8F0026B1B5 /* Background.swift */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		F5DC9F8925696D8A008C29D0 /* OthersElements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OthersElements;
+			sourceTree = "<group>";
+		};
+		F5DC9F9925698E1F008C29D0 /* FontStyles */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC9F9525698AAC008C29D0 /* FontWeight.swift */,
+				F5DC9F9B25698F3B008C29D0 /* FontStyle.swift */,
+			);
+			path = FontStyles;
+			sourceTree = "<group>";
+		};
+		F5DC9FB5256AE451008C29D0 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC9FA5256A8912008C29D0 /* LabelView.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		F5DC9FB6256AE466008C29D0 /* Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC9F6C25667D70008C29D0 /* Gradient.swift */,
+			);
+			path = Gradients;
+			sourceTree = "<group>";
+		};
+		F5DC9FB7256AE47C008C29D0 /* TextViews */ = {
+			isa = PBXGroup;
+			children = (
+				F5DC9FA8256A9E19008C29D0 /* TextView.swift */,
+			);
+			path = TextViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +317,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53543E4256510030026B1B5 /* ContentView.swift in Sources */,
+				F5DC9F8525696BCA008C29D0 /* StyleForTextWithBlackColor.swift in Sources */,
+				F5DC9F6A256677DC008C29D0 /* PersonView.swift in Sources */,
+				F53543FE256517870026B1B5 /* TestModelPerson.swift in Sources */,
+				F5DC9F7025680D19008C29D0 /* SquareButton.swift in Sources */,
+				F5DC9F7C256815C0008C29D0 /* ButtonWithFrame.swift in Sources */,
+				F535440125651CEA0026B1B5 /* MainScreenPerson.swift in Sources */,
+				F5DC9F7325680FE7008C29D0 /* ButtonVariableWidth.swift in Sources */,
+				F5DC9F6D25667D70008C29D0 /* Gradient.swift in Sources */,
+				F5DC9FA3256A885E008C29D0 /* ButtonWithBack.swift in Sources */,
+				F5DC9FAC256AA052008C29D0 /* DropButton.swift in Sources */,
+				F5DC9FA9256A9E19008C29D0 /* TextView.swift in Sources */,
+				F5DC9FC2256AFB36008C29D0 /* DropDownMenu.swift in Sources */,
+				F535440A25653A700026B1B5 /* OrderView.swift in Sources */,
 				F53543E2256510030026B1B5 /* MPMasterTwoScreenApp.swift in Sources */,
+				F5DC9F77256813EE008C29D0 /* ButtonWithBackAndShadow.swift in Sources */,
+				F535440425651D8F0026B1B5 /* Background.swift in Sources */,
+				F5DC9F9225697565008C29D0 /* StyleForTextWithWhiteColor.swift in Sources */,
+				F5DC9FBC256AEB29008C29D0 /* RoundWithGradientButton.swift in Sources */,
+				F5DC9FA6256A8912008C29D0 /* LabelView.swift in Sources */,
+				F5DC9F6725657180008C29D0 /* OrderViewModel.swift in Sources */,
+				F5DC9F9C25698F3B008C29D0 /* FontStyle.swift in Sources */,
+				F5DC9FB2256ABA40008C29D0 /* CollapsableView.swift in Sources */,
+				F5DC9F9F2569B2D2008C29D0 /* ForTestElement.swift in Sources */,
+				F5DC9F7F2568197D008C29D0 /* StyleForButtons.swift in Sources */,
+				F5DC9F8B25696DFD008C29D0 /* ButtonOnlyText.swift in Sources */,
+				F5DC9F9625698AAC008C29D0 /* FontWeight.swift in Sources */,
+				F5DC9F8225681A38008C29D0 /* StyleForTextWithBlueColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +472,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MPMasterTwoScreen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MPMasterTwoScreen/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = P87Y98S683;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MPMasterTwoScreen/Info.plist;
+				INFOPLIST_FILE = MPMasterTwoScreen/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,10 +494,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"MPMasterTwoScreen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MPMasterTwoScreen/SupportingFiles/Preview Content\"";
 				DEVELOPMENT_TEAM = P87Y98S683;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MPMasterTwoScreen/Info.plist;
+				INFOPLIST_FILE = MPMasterTwoScreen/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
