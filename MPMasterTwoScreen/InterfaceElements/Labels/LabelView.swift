@@ -12,7 +12,7 @@ struct LabelView: View {
     let value: String
     var action: (() -> Void)?
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 15) {
             Text(title).mediumTextBlack()
             HStack {
                 Text(value).mediumTextBlue()
@@ -21,6 +21,7 @@ struct LabelView: View {
                 Spacer()
                 if let action = action {
                     SquareButton(action: action)
+                        .offset(y: -10.0)
                 }
             }
         }
@@ -29,6 +30,6 @@ struct LabelView: View {
 
 struct LabelView_Previews: PreviewProvider {
     static var previews: some View {
-        LabelView(title: "Тип наряда", value: "ул. Острякова д.5, кв.167, подъезд 1, этаж 7 gfgdfgdfg gfdgdfgfgd gfddfgd dfggdfgdfgd")
+        LabelView(title: "Тип наряда", value: "987654321", action: {})
     }
 }

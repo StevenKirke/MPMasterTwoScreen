@@ -17,6 +17,10 @@ struct Person {
     let lastTime = "14:00"
     let firstNumberPhone = "8 (909) 965 65 41"
     let secondNumberPhone = "8 (495) 821 12 12"
+    let adress = "ул. Острякова д.5, кв.167, подъезд 1, этаж 7"
+    let numberUSPD = "123456789"
+    let flowdiagram = "Канальная"
+    
     
     var fullName: String {
         var result = ""

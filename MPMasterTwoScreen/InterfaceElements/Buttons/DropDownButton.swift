@@ -65,7 +65,7 @@ struct DropDownHeader: View {
             HStack {
                 Text(select.title)
                 Spacer()
-                Image(systemName: "chevron.\(expand ? "up" : "down")")
+                Image(systemName: "chevron.\(expand ? "down" : "left")")
             }
             .padding(.horizontal, paddingHInner)
             .frame(width: width,
