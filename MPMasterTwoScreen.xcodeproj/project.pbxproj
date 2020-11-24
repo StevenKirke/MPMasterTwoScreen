@@ -35,7 +35,8 @@
 		F5DC9FAC256AA052008C29D0 /* DropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FAB256AA052008C29D0 /* DropButton.swift */; };
 		F5DC9FB2256ABA40008C29D0 /* CollapsableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FB1256ABA40008C29D0 /* CollapsableView.swift */; };
 		F5DC9FBC256AEB29008C29D0 /* RoundWithGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FBB256AEB29008C29D0 /* RoundWithGradientButton.swift */; };
-		F5DC9FC2256AFB36008C29D0 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FC1256AFB36008C29D0 /* DropDownMenu.swift */; };
+		F5DC9FCB256BE6A7008C29D0 /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FCA256BE6A7008C29D0 /* DropDownButton.swift */; };
+		F5DCA00B256CE6F1008C29D0 /* TestModelForDropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCA00A256CE6F1008C29D0 /* TestModelForDropButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +70,8 @@
 		F5DC9FAB256AA052008C29D0 /* DropButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropButton.swift; sourceTree = "<group>"; };
 		F5DC9FB1256ABA40008C29D0 /* CollapsableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableView.swift; sourceTree = "<group>"; };
 		F5DC9FBB256AEB29008C29D0 /* RoundWithGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundWithGradientButton.swift; sourceTree = "<group>"; };
-		F5DC9FC1256AFB36008C29D0 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
+		F5DC9FCA256BE6A7008C29D0 /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
+		F5DCA00A256CE6F1008C29D0 /* TestModelForDropButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModelForDropButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				F53543FD256517870026B1B5 /* TestModelPerson.swift */,
+				F5DCA00A256CE6F1008C29D0 /* TestModelForDropButton.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,7 +197,7 @@
 				F5DC9FAB256AA052008C29D0 /* DropButton.swift */,
 				F5DC9FB1256ABA40008C29D0 /* CollapsableView.swift */,
 				F5DC9FBB256AEB29008C29D0 /* RoundWithGradientButton.swift */,
-				F5DC9FC1256AFB36008C29D0 /* DropDownMenu.swift */,
+				F5DC9FCA256BE6A7008C29D0 /* DropDownButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -317,10 +320,11 @@
 				F535440125651CEA0026B1B5 /* MainScreenPerson.swift in Sources */,
 				F5DC9F7325680FE7008C29D0 /* ButtonVariableWidth.swift in Sources */,
 				F5DC9F6D25667D70008C29D0 /* Gradient.swift in Sources */,
+				F5DC9FCB256BE6A7008C29D0 /* DropDownButton.swift in Sources */,
 				F5DC9FA3256A885E008C29D0 /* ButtonWithBack.swift in Sources */,
 				F5DC9FAC256AA052008C29D0 /* DropButton.swift in Sources */,
 				F5DC9FA9256A9E19008C29D0 /* TextView.swift in Sources */,
-				F5DC9FC2256AFB36008C29D0 /* DropDownMenu.swift in Sources */,
+				F5DCA00B256CE6F1008C29D0 /* TestModelForDropButton.swift in Sources */,
 				F535440A25653A700026B1B5 /* OrderView.swift in Sources */,
 				F53543E2256510030026B1B5 /* MPMasterTwoScreenApp.swift in Sources */,
 				F5DC9F77256813EE008C29D0 /* ButtonWithBackAndShadow.swift in Sources */,

@@ -19,6 +19,8 @@ fileprivate let horizontalPadding: CGFloat = 16
 struct PersonView: View {
     @Environment(\.presentationMode) private var presentationMode
     
+    let actionButton = TestModelForDropButton()
+    
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
@@ -61,11 +63,10 @@ struct PersonView: View {
                             .frame(width: 63, height: 3)
                             .padding(.leading, horizontalPadding)
                         
-                        DropdownButton(onSelect: { (item) in
-                            print(item.value)
-                        }, items: items, selectedItem: $curentStatus)
-                        .zIndex(100)
-                        .padding()
+                        DropDownView(menuActions: actionButton.actionButton, selectItem: actionButton.actionButton.first!)
+                            .mediumTextBlue()
+                            .padding(.leading, horizontalPadding)
+                        
                         Group {
                             Group {
                                 LabelView(
