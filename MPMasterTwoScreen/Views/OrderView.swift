@@ -14,30 +14,50 @@ struct OrderView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-            ZStack {
-                Background(color: "veryLightBlue")
-                VStack {
-                    Text("Звоним").mediumTextBlack().topThirtyPadding()
-                    Text(viewModel.person.fullName).largeTextBlue().topPadding()
-                    Text("Тип наряда").mediumTextBlack().topPadding()
-                    Text(viewModel.person.outfit).mediumTextBlue().topPadding()
-                    Text("Клиентское время").mediumTextBlack().topThirtyPadding()
-                    Text(viewModel.person.dateAndTime).mediumTextBlue().topPadding()
-                    Text("Контактный номер").smallTextBlue().topThirtyPadding()
+        ZStack {
+            Background(color: "veryLightBlue")
+            VStack(alignment: .center, spacing: 16) {
+                LabelViewCenter(title: "Звоним",
+                                value: viewModel.person.fullName)
+                    .font(.custom("SFUIDisplay-Bold", size: 22))
+                    .veryBigTextBlue()
+                LabelViewCenter(title: "Тип наряда",
+                                value: viewModel.person.outfit)
+                    .font(.custom("SFUIDisplay-Bold", size: 14))
+                    .mediumTextBlue()
+                LabelViewCenter(title: "Клиентское время",
+                                value: viewModel.person.dateAndTime)
+                    //.font(Font.title.weight(.heavy))
+                    .font(.custom("SFUIDisplay-Bold", size: 14))
+                    .mediumTextBlue()
+                Group {
+                    Text("Контактный номер")
+                        .smallTextBlue()
+                        .topThirtyPadding()
                     ZStack {
                         Rectangle()
-                            .stroke(Color("darkBlue"), style: StrokeStyle(lineWidth: 1.0, lineCap: .round, dash: [2, 2]))
+                            .stroke(Color("darkBlue"),
+                                    style: StrokeStyle(lineWidth: 1.0,
+                                                       lineCap: .round, dash: [2, 2]))
                             .frame(height: 83)
-                        ButtonWithBackAndShadow(action: { showPersonView.toggle() },
-                                       text: viewModel.person.firstNumberPhone)
+                        ButtonWithBackAndShadow(action: {
+                            showPersonView.toggle()
+                        },
+                        text: viewModel.person.firstNumberPhone)
                     }
-                    .padding([.leading, .trailing], 33.0)
-                    ButtonWithFrame(action: { }, text: viewModel.person.secondNumberPhone)
-                    ButtonOnlyText(action: { }, text: "Отмена")
+                    .padding(.horizontal, 33.0)
+                    ButtonWithFrame(action: { },
+                                    text: viewModel.person.secondNumberPhone)
+                    ButtonOnlyText(action: { },
+                                   text: "Отмена")
                 }
-                .background(Color.white).cornerRadius(13.0).shadow(color: Color("opacityShadow"), radius: 4, x: 0, y: 2)
-                .padding(.horizontal, 13.0)
             }
+            .padding(.vertical, 30)
+            .background(Color.white)
+            .cornerRadius(13.0)
+            .shadow(color: Color("opacityShadow"), radius: 4, x: 0, y: 2)
+            .padding(.horizontal, 13.0)
+        }
         .fullScreenCover(isPresented: $showPersonView) {
             PersonView()
         }
@@ -88,3 +108,27 @@ extension View {
         self.modifier(TopThirtyPadding())
     }
 }
+
+
+//
+//extension Text {
+//
+//    enum Style {
+//        case h1, h2 // etc
+//    }
+//
+//    func style(_ style: Style) -> Text {
+//        switch style {
+//        case .h1:
+//            return
+//             foregroundColor(.black)
+//            .font(.system(size: 24))
+//            .fontWeight(.semibold)
+//        case .h2:
+//            return
+//             foregroundColor(.black)
+//            .font(.system(size: 20))
+//            .fontWeight(.medium)
+//        }
+//    }
+//}

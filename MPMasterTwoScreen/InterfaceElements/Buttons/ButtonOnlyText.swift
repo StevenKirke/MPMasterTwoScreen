@@ -13,10 +13,10 @@ struct ButtonOnlyText: View {
     var body: some View {
         Button(action: action, label: {
             Text(text).foregroundColor(Color("darkBlue"))
-                .padding()
+                //.padding()
         })
         .buttonWithBackOrBorder()
-        .padding(.vertical, 36.0)
+        //.padding(.vertical, 36.0)
     }
 }
 

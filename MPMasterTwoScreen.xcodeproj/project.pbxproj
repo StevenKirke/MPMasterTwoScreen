@@ -34,6 +34,7 @@
 		F5DC9FCB256BE6A7008C29D0 /* DropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC9FCA256BE6A7008C29D0 /* DropDownButton.swift */; };
 		F5DCA00B256CE6F1008C29D0 /* TestModelForDropButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCA00A256CE6F1008C29D0 /* TestModelForDropButton.swift */; };
 		F5DCA00F256D0996008C29D0 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCA00E256D0996008C29D0 /* TextFieldView.swift */; };
+		F5DCA017256E42A6008C29D0 /* LabelViewCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DCA016256E42A6008C29D0 /* LabelViewCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		F5DC9FCA256BE6A7008C29D0 /* DropDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownButton.swift; sourceTree = "<group>"; };
 		F5DCA00A256CE6F1008C29D0 /* TestModelForDropButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModelForDropButton.swift; sourceTree = "<group>"; };
 		F5DCA00E256D0996008C29D0 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		F5DCA016256E42A6008C29D0 /* LabelViewCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +133,8 @@
 		F53543F2256511100026B1B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F535440925653A700026B1B5 /* OrderView.swift */,
 				F5DC9F6625657180008C29D0 /* OrderViewModel.swift */,
+				F535440925653A700026B1B5 /* OrderView.swift */,
 				F5DC9F69256677DC008C29D0 /* PersonView.swift */,
 			);
 			path = Views;
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				F5DC9FA5256A8912008C29D0 /* LabelView.swift */,
+				F5DCA016256E42A6008C29D0 /* LabelViewCenter.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				F5DC9F6A256677DC008C29D0 /* PersonView.swift in Sources */,
 				F53543FE256517870026B1B5 /* TestModelPerson.swift in Sources */,
 				F5DC9F7025680D19008C29D0 /* SquareButton.swift in Sources */,
+				F5DCA017256E42A6008C29D0 /* LabelViewCenter.swift in Sources */,
 				F5DC9F7C256815C0008C29D0 /* ButtonWithFrame.swift in Sources */,
 				F5DC9F7325680FE7008C29D0 /* ButtonVariableWidth.swift in Sources */,
 				F5DC9F6D25667D70008C29D0 /* Gradient.swift in Sources */,
