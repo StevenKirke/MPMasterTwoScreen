@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 fileprivate let horizontalPadding: CGFloat = 15
 fileprivate let topPadding: CGFloat = 25
 fileprivate let buttonCopyIndent: CGFloat = 240
@@ -109,7 +107,7 @@ struct PersonView: View {
                 }
                 .padding(.leading, horizontalPadding)
                 .padding(.vertical, horizontalPadding)
-                Ω(alignment: .leading, spacing: horizontalPadding ) {
+                VStack(alignment: .leading, spacing: horizontalPadding ) {
                     HStack {
                         LabelView(
                             title: "Номер УСПД",
