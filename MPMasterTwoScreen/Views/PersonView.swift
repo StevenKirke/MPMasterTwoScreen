@@ -8,11 +8,13 @@
 import SwiftUI
 
 
+
 fileprivate let horizontalPadding: CGFloat = 15
 fileprivate let topPadding: CGFloat = 25
 fileprivate let buttonCopyIndent: CGFloat = 240
 
 struct PersonView: View {
+    @ObservedObject var viewModel: OrderViewModel
     @Environment(\.presentationMode) private var presentationMode
     
     let actionButton = TestModelForDropButton()
@@ -40,8 +42,8 @@ struct PersonView: View {
                         .frame(width: imageSize)
                         Spacer()
                         VStack(alignment: .center, spacing: 10.0) {
-                            Text("+ 7 (495) 265-02-01").veryBigTextWhite()
-                            Text("Первичное подключение абонента").mediumTextWhite()
+                            Text(viewModel.person.firstNumberPhone).veryBigTextWhite()
+                            Text(viewModel.person.outfit).mediumTextWhite()
                                 .frame(maxWidth: .infinity)
                         }
                         .padding(.leading, -(imageSize + imagePadding))
@@ -50,7 +52,9 @@ struct PersonView: View {
             }
             VStack(alignment: .leading, spacing: 0) {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("13:30 - 14:35").veryBigTextBlue()
+                    Text("13:30 - 14:35")
+                        .bold()
+                        .veryBigTextBlue()
                     RoundedRectangle(cornerRadius: widthRectangle / 2)
                         .fill(Color("darkBlue"))
                         .frame(width: 63, height: 3)
@@ -61,31 +65,31 @@ struct PersonView: View {
                 VStack(alignment: .leading, spacing: horizontalPadding ) {
                     LabelView(
                         title: "Тип наряда",
-                        value: "Первичное подключение абонента")
+                        value: viewModel.person.outfit)
                     LabelView(
                         title: "Номер WFM",
-                        value: "987654321")
+                        value: viewModel.person.numberWFM)
                     HStack {
                         LabelView(
                             title: "Телефон",
-                            value: "+ 7 (495) 265-02-01")
+                            value: viewModel.person.firstNumberPhone)
                         SquareButton(action: { })
                     }
                     .frame(width: buttonCopyIndent)
                     HStack {
                         LabelView(
                             title: "Контактный телефон",
-                            value: "+ 8 (962) 262-02-03")
+                            value: viewModel.person.secondNumberPhone)
                         SquareButton(action: { })
                     }
                     .frame(width: buttonCopyIndent)
                     LabelView(
                         title: "Клиентское время",
-                        value: "17.10.2018 | 12:00 - 14:00")
+                        value: viewModel.person.dateAndTime)
                     HStack {
                         LabelView(
                             title: "Адрес",
-                            value: "ул. Острякова д.5, кв.167, подъезд 1, этаж 7")
+                            value: viewModel.person.adress)
                         RoundWithGradientButton(action: { } )
                     }
                 }
@@ -105,17 +109,17 @@ struct PersonView: View {
                 }
                 .padding(.leading, horizontalPadding)
                 .padding(.vertical, horizontalPadding)
-                VStack(alignment: .leading, spacing: horizontalPadding ) {
+                Ω(alignment: .leading, spacing: horizontalPadding ) {
                     HStack {
                         LabelView(
                             title: "Номер УСПД",
-                            value: "123456789")
+                            value: viewModel.person.numberUSPD)
                         SquareButton(action: { })
                     }
                     .frame(width: buttonCopyIndent)
                     LabelView(
                         title: "Схема заявки",
-                        value: "Канальная")
+                        value: viewModel.person.flowdiagram)
                 }
                 .padding(.leading, horizontalPadding)
                 VStack(alignment: .leading, spacing: horizontalPadding ) {
@@ -145,37 +149,20 @@ struct PersonView: View {
             .padding(.horizontal, horizontalPadding)
             .offset(y: -40)
             VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
-                CollapsableView(content:
-                                    VStack(alignment: .leading) {
-                                        Text("Прослушка с помощью лидаров пылесоса — новая угроза частной жизни. Делаем лазерный микрофон в домашних условиях")
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .mediumTextBlack()
-                                    }
-                                    .padding(.horizontal, horizontalPadding)
-                                ,
-                                title: "данные по абоненту")
-                CollapsableView(content:
-                                    VStack(alignment: .leading) {
-                                        Text("Was trying to understand this myself as other answers here mention Text.multilineTextAlignment(_:) / VStack(alignment:) / frame(width:alignment:) but each solution solves a specific problem. Eventually it depends on the UI requirement and a combination of these.")
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .mediumTextBlack()
-                                    }
-                                    .padding(.horizontal, horizontalPadding)
-                                ,
-                                title: "подключаемые услуги")
-                CollapsableView(content:
-                                    VStack(alignment: .leading) {
-                                        Text("1111")
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .mediumTextBlack()
-                                    }
-                                    .padding(.horizontal, horizontalPadding)
-                                ,
-                                title: "разовые услуги")
+                ForEach (viewModel.person.blockElements.sorted(by: >), id: \.key) { key, value in
+                    CollapsableView(content:
+                                        VStack(alignment: .leading) {
+                                            Text(value)
+                                                .frame(maxWidth: .infinity, alignment: .leading)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .mediumTextBlack()
+                                        }
+                                        .padding(.horizontal, horizontalPadding)
+                                    ,
+                                    title: key)
+                }
             }
+            
             .padding(.horizontal, horizontalPadding)
             .offset(y: -30)
         }
@@ -186,7 +173,7 @@ struct PersonView: View {
 
 struct PersonView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonView()
+        PersonView(viewModel: OrderViewModel(person: Person()))
     }
 }
 

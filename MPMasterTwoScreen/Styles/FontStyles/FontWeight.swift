@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+/*
 struct Light: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -43,6 +43,7 @@ struct Bold: ViewModifier {
 }
 
 
+
 extension View {
     func light() -> some View {
         self.modifier(Light())
@@ -62,6 +63,36 @@ extension View {
     
     func bold() -> some View {
         self.modifier(Bold())
+    }
+}
+*/
+extension Text {
+    enum Style {
+        case light
+        case regular
+        case medium
+        case semibold
+        case bold
+    }
+    
+    func style(style: Style) -> Text {
+        switch style {
+        case .light:
+            return
+                font(Font.title.weight(.light))
+        case .regular:
+            return
+                font(Font.title.weight(.regular))
+        case .medium:
+            return
+                font(Font.title.weight(.medium))
+        case .semibold:
+            return
+                font(Font.title.weight(.semibold))
+        case .bold:
+            return
+                font(Font.title.weight(.bold))
+        }
     }
 }
 

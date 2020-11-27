@@ -27,13 +27,11 @@ struct OrderView: View {
                     .mediumTextBlue()
                 LabelViewCenter(title: "Клиентское время",
                                 value: viewModel.person.dateAndTime)
-                    //.font(Font.title.weight(.heavy))
                     .font(.custom("SFUIDisplay-Bold", size: 14))
                     .mediumTextBlue()
                 Group {
                     Text("Контактный номер")
                         .smallTextBlue()
-                        .topThirtyPadding()
                     ZStack {
                         Rectangle()
                             .stroke(Color("darkBlue"),
@@ -59,7 +57,7 @@ struct OrderView: View {
             .padding(.horizontal, 13.0)
         }
         .fullScreenCover(isPresented: $showPersonView) {
-            PersonView()
+            PersonView(viewModel: OrderViewModel(person: Person()))
         }
     }
 }
@@ -79,56 +77,3 @@ struct OrderView_Previews: PreviewProvider {
 }
 
 
-
-
-
-
-struct TopPadding: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .padding(.top, 17.0)
-    }
-}
-
-struct TopThirtyPadding: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .padding(.top, 30.0)
-    }
-}
-
-
-extension View {
-    
-    func topPadding() -> some View {
-        self.modifier(TopPadding())
-    }
-    
-    func topThirtyPadding() -> some View {
-        self.modifier(TopThirtyPadding())
-    }
-}
-
-
-//
-//extension Text {
-//
-//    enum Style {
-//        case h1, h2 // etc
-//    }
-//
-//    func style(_ style: Style) -> Text {
-//        switch style {
-//        case .h1:
-//            return
-//             foregroundColor(.black)
-//            .font(.system(size: 24))
-//            .fontWeight(.semibold)
-//        case .h2:
-//            return
-//             foregroundColor(.black)
-//            .font(.system(size: 20))
-//            .fontWeight(.medium)
-//        }
-//    }
-//}

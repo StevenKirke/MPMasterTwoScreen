@@ -33,3 +33,4 @@ struct LabelView_Previews: PreviewProvider {
         LabelView(title: "Тип наряда", value: "987654321", action: {})
     }
 }
+

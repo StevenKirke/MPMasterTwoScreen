@@ -17,7 +17,6 @@ struct ButtonWithFrame: View {
         })
         .buttonWithBackOrBorder()
         .background(RoundedRectangle(cornerRadius: 13.0).stroke(Color("darkBlue")))
-        //.padding(.top, 15.0)
     }
 }
 

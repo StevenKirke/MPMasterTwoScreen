@@ -8,6 +8,7 @@
 import Foundation
 
 struct Person {
+    
     let firstName = "Иван"
     let secondName = "Иванов"
     let thirdName = "Иванович"
@@ -20,7 +21,8 @@ struct Person {
     let adress = "ул. Острякова д.5, кв.167, подъезд 1, этаж 7"
     let numberUSPD = "123456789"
     let flowdiagram = "Канальная"
-    
+    let numberWFM = "987654321"
+    var blockElements = element
     
     var fullName: String {
         var result = ""
@@ -33,5 +35,12 @@ struct Person {
     var dateAndTime: String {
         "\(data) | \(onsetTime) - \(lastTime)"
     }
+
 }
+
+let element: [String: String] = [
+    "subscriberData": "Прослушка с помощью лидаров пылесоса — новая угроза частной жизни. Делаем лазерный микрофон в домашних условиях",
+    "connectedServices": "В качестве альтернативы, если контекст уже предоставляет информацию о типе, такую ​​как аргумент функции или уже типизированная переменная или константа, вы можете создать пустой набор с пустым литералом массива",
+    "oneTimeServices": "Выражение, следующее за return, рассматривается как аргумент return"
+]
 
